@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Psuedo classes</title>
+<style>
+    input[type=number]:out-of-range{
+        border: 2px solid red;
+            }
+            input[type=number]:in-range{
+                border: 2px blue; 
+            }
+        input[type=email]:invalid{
+            border: 2px solid red;
+        }
+        p::first-line{
+            text-decoration: underline;
+        }
+        p::first-letter{
+            
+            color: blue;
+        }
+        li::marker{
+            color:aqua;
+        }
+        .c1{
+            list-style: none;
+        }
+        .c1 li::before{
+            content:"\2713"
+        }
+</style>
+</head>
+<body>
+    <input type="number" placeholder="Enter age" min="0" max="18" style="width: 550px;"><br>
+    <input type="email" placeholder="Enter Email" >
+    <br>
+    <p>
+        Students are the heart of any educational institution
+        , embodying curiosity and a desire for knowledge. 
+        They come from diverse backgrounds, bringing unique perspectives
+         that enrich classroom discussions and foster collaboration. As they 
+         navigate their academic journeys, students develop critical thinking,
+          creativity, and problem-solving skills, preparing them for future challenges. 
+          Beyond academics, they engage in extracurricular activities, forming friendships and
+           learning valuable life skills. Ultimately, students are not just learners; they are future leaders and innovators, shaping the world with their ideas and ambitions
+
+    </p>
+    <ul>
+        <li>KLU</li>
+        <li>CSE</li>
+        <li>ECE</li>
+        <li>EEE</li>
+        <li>MECH</li>
+    </ul>
+
+    <ul class="c1">
+        <li>KLU</li>
+        <li>CSE</li>
+        <li>ECE</li>
+        <li>EEE</li>
+        <li>MECH</li>
+    </ul>
+</body>
+</html>
